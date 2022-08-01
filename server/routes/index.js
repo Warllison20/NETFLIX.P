@@ -11,6 +11,7 @@ const controllerPlanos = require("../controllers/Planos");
 const controllerPagamento = require("../controllers/Pagamento");
 const controllerLoginAdmin = require('../controllers/LoginAdmin');
 const controllerAdmin = require("../controllers/Admin");
+const controllerSearch = require("../controllers/search");
 
 /* GET home page. */
 
@@ -25,6 +26,8 @@ router.get("/cadastro", controllerCadastro.index )
 router.get("/planos", controllerPlanos.index )
 
 router.get("/pagamento", controllerPagamento.index )
+
+router.get("/search", controllerSearch.index )
 
 router.get ("/admin/login", controllerLoginAdmin.index )
 

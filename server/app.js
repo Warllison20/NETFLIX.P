@@ -20,7 +20,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/usuarios', usersRouter);
+app.use('/Home', usersRouter);
+app.use('/login', usersRouter);
+app.use('/destaque', usersRouter);
+app.use('/pagamento1', usersRouter);
+app.use('/pagamento2', usersRouter);
+app.use('/pagamento3', usersRouter);
+app.use('/Filmes', usersRouter);
+app.use('/Series', usersRouter);
+app.use('/perfil', usersRouter);
+app.use('/search', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
