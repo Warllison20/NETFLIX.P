@@ -1,60 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="../public/stylesheets/">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"><img src="../public/images/logo.png"></a>
-        <ul class="navigation">
-            <li><a href="#">Filmes</a></li>
-            <li><a href="#">Séries</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">Assistir depois </a></li>
-        </ul>
-        <div class="search">
-            <input type="text" placeholder="Search">
-            <i class="fas fa-search"></i>
-        </div>
-    </header>
+    <div class="box-principal">
 
-    <div class="banner">
-        <img src="../public/images/bg.jpg" class="bg">
 
-        <div class="content">
-            <img src="../public/images/name.png" class="movieTitle">
-            <h4>
-                <span>2020</span>
-                <span><i>12+</i></span>
-                <span>1h 55min</span>
-                <span>Ação</span>
-            </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam maiores illo iure laboriosam quaerat vitae ad, debitis hic corporis sequi optio facere nostrum obcaecati earum, perferendis impedit. Quod, aspernatur.
-            </p>
+        <header class="cabecalho">
+            <img class="logo" src="/images/netflixlogo.png" alt="">
+            <a href="">Entrar</a>
+        </header>
+        <main class="main">
 
-            <div class="buttons">
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Play</a>
-                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Assistir depois</a>
-                  <div class="brasil hoje"><p>Top 1 hoje no Brasil</p> </div>
-                
+            <div class="main-filho">
+
+                <h1>Filmes, programas de
+                    TV e muito mais. Sem Limites.</h1>
+                <span>Assista onde quiser. Cancele onde quiser.</span>
+                <form class="form-cta">
+                    <input type="text" placeholder="@email" required>
+                    <button type="submit">VAMOS LÁ</button>
+                </form>
+                <p>Pronto para assistir ? Informe seu email ?</p>
             </div>
+
+
+
+            <div class="efeito-escuro"></div>
+
+        </main>
+
+        <section class="section">
+            <di class="container">
+
+                <div class="texto-imagen">
+
+                    <h1 class="anuncio">Aproveite a TV.</h1>
+                    <p class="texto-01">Assista em Smart TVs. Playtation, Xbox, Chromecast, Apple TV, </p>
+
+                </div>
+
+                <img class="imagen-01" src="/images/29640702888_cd4826b399_c.jpg" alt="">
+
+    </div>
+    </section>
+
+    <section class="section-02">
+        <div class="container-02">
+
+            <img class="imagen-02" src="/images/08.png" alt="">
+            <div class="texto-02">
+                <h1 class="anuncio-02">Baixe seus Programas Para assistir. Offline</h1>
+                <p class="paragrafo-02">Salve seus favoritos facilmente e sempretenha algo para assistir</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section-03">
+        <div class="container-03">
+
+
+            <div class="texto-03">
+                <h1 class="anuncio-03">Assista em todos os lugares.</h1>
+                <p>Transmita filmes e programas de TV ilimitados em seu telefone, yablet, laptop e TV sem pagar mais.
+                </p>
+            </div>
+            <img class="imagen-03" src="/images/03.png" alt="">
+        </div>
+    </section>
+
+    <section class="section-04">
+        <img class="imagen-04" src="/images/vilva.jpg" alt="">
+
+        <div class="container-04">
+            <h1>Series para sua famaiia.</h1>
+            <p class="paragrafo-04">Assita os ultimos lançamentos. temporadas ineditas de series recem lançadas.</p>
         </div>
 
-        <a class="play" onclick="toggleVideo()"><img src="../public/images/play.png">Assistir trailer</a>
-    </div>
+    </section>
 
-    <div class="trailer">
-        <video src="assets/video.mp4" controls="true"></video>
-        <img src="assets/close.png" class="close" onclick="toggleVideo()">
+    <footer>
+
+
+        <div class="infor-01">
+            <h4>Duvidas? Ligue para 1-844-505-2993</h4>
+            <p class="T-01">Perguntas Frequentes</p>
+            <p class="T-02">Reclamações</p>
+            <p class="T-03">Duvidas Sobre</p>
+        </div>
+
+        <div class="infor-02">
+            <h4>Centro de Ajuda</h4>
+            <p class="T-04">Informações corporativas</p>
+        </div>
+
+        <div class="infor-03">
+            <h4>Termos de Uso</h4>
+            <p class="T-05">ajuda</p>
+        </div>
+
+    </footer>
     </div>
 </body>
-    <script src="src/script.js"></script>
-    <script src="https://yagasaki7k.github.io/custom-scripts/font-awesome.js"></script>
+
 </html>
