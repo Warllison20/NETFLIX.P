@@ -12,6 +12,8 @@ const controllerPagamento = require("../controllers/Pagamento");
 const controllerLoginAdmin = require('../controllers/LoginAdmin');
 const controllerAdmin = require("../controllers/Admin");
 const controllerSearch = require("../controllers/search");
+const controllerSeries = require("../controllers/series");
+const controllerFilmes = require("../controllers/filmes");
 
 /* GET home page. */
 
@@ -33,4 +35,7 @@ router.get ("/admin/login", controllerLoginAdmin.index )
 
 router.get ("/admin/index", controllerAdmin.index )
 
+router.get ("/series", controllerSeries.index )
+
+router.get ("/filmes", controllerFilmes.index )
 module.exports = router;
