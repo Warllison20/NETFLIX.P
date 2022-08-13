@@ -14,6 +14,7 @@ const controllerAdmin = require("../controllers/Admin");
 const controllerSearch = require("../controllers/search");
 const controllerSeries = require("../controllers/series");
 const controllerFilmes = require("../controllers/filmes");
+const filmesApiController = require ("../controllers/filmesApi");
 
 /* GET home page. */
 
@@ -37,5 +38,5 @@ router.get ("/admin/index", controllerAdmin.index )
 
 router.get ("/series", controllerSeries.index )
 
-router.get ("/filmes", controllerFilmes.index )
+router.get("/api/filmes", filmesApiController.getFilmes )
 module.exports = router;
